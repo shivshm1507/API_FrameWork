@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.myTest.TestExecution">
+      <class name="com.jira.APIAutomation.RestAssuredInterviewPrograms">
         <methods>
-          <include name="tearDown"/>
-          <include name="launchBrowser"/>
+          <include name="methodChainingExample"/>
+          <include name="requestSpecificationExample"/>
         </methods>
-      </class> <!-- com.myTest.TestExecution -->
+      </class> <!-- com.jira.APIAutomation.RestAssuredInterviewPrograms -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
