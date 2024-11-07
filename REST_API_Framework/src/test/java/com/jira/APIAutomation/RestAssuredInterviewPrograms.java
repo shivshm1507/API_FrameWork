@@ -131,8 +131,7 @@ public class RestAssuredInterviewPrograms {
 		
 		JSONObject jobj = new JSONObject();
 		jobj.put("name", "Arjun");
-		jobj.put("Role", "Software Engineer");
-		
+		jobj.put("Role", "Software Engineer");	
 		Response response = given()
 		.baseUri("http://localhost:8080")
 		.headers("X-REGION", "NAM")
@@ -156,10 +155,8 @@ public class RestAssuredInterviewPrograms {
 	@Test
 	public void getJSONArraySize() {
 		
-		RestAssured.baseURI="http://localhost:8080";
-		
-		Response res = RestAssured.given().request(Method.GET,"/employee/all");
-		
+		RestAssured.baseURI="http://localhost:8080";		
+		Response res = RestAssured.given().request(Method.GET,"/employee/all");	
 		List<Object> list = res.jsonPath().getList("Employee.ID");
 		System.out.println(list.size());
 		
